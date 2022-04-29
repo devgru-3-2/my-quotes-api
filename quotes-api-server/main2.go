@@ -26,7 +26,7 @@ func main() {
 	api := echo.New()
 
 	api.GET("/", getQuotes)
-	api.GET("/quotes/random", getRandomQuotes)
+	api.GET("/quotes", getRandomQuotes)
 
 	port := os.Getenv("Port")
 	if port == "" {
